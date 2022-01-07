@@ -3,15 +3,14 @@ import os
 from py_youtube import Data, Search 
 from pyrogram.types import *
 
-TOKEN = os.environ.get("TOKEN", "")
+from config import Config
 
-APP_ID = int(os.environ.get("APP_ID", ""))
+if bool(os.environ.get("ENV", False)):
+    from sample_config import Config
+else:
+    from config import Config")
 
-API_HASH = os.environ.get("API_HASH", "")
 
-
-app = Client( "yt-search",
-    bot_token = TOKEN,  api_id =API_ID ,    api_hash = API_HASH)
     
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client,message):
