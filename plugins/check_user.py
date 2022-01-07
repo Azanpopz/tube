@@ -8,9 +8,9 @@ import logging
 
 from plugins.database import Database
 
-DB_URL = config.DB_URL
-DB_NAME = config.DB_NAME
-LOG_CHANNEL = config.LOG_CHANNEL
+DB_URL = con.DB_URL
+DB_NAME = con.DB_NAME
+LOG_CHANNEL = con.LOG_CHANNEL
 
 db = Database(DB_URL, DB_NAME)
 
