@@ -5,7 +5,7 @@ import logging
 from pyrogram import Client
 from pyrogram import StopPropagation, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-from import config
+from config import
 
 
 from plugins.check_user import handle_user_status
