@@ -29,7 +29,7 @@ else:
 xxx = r"^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$"
 
 
-@Client.on_message(filters.regex(xxx) & filters.private & filters.command(["yt"]))
+@Client.on_message(filters.regex(xxx) & filters.private & filters.command('yt'))
 async def echo(bot, m: Message):
     img = await m.reply_photo(Presets.INITIAL_MEDIA, quote=True)
     # If the Authorized user list is present, then only allow the above users to download videos. Else, will allow all.
