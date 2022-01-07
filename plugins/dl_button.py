@@ -19,6 +19,7 @@ from hachoir.metadata import extractMetadata
 from support.progress import progress_for_pyrogram, humanbytes
 from support.buttons import reply_markup_cancel, reply_markup_close
 from pyrogram import Client, filters
+from pyrogram.types import Message
 
 if bool(os.environ.get("ENV", False)):
     from sample_config import Config
