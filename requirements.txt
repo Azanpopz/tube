@@ -5,6 +5,7 @@ TgCrypto
 # --- For-YTDL. --------------- #
 youtube-search-python
 youtube-dl
+py-youtube
 pytube
 hachoir
 wget
@@ -12,4 +13,4 @@ wget
 sqlalchemy~=1.3.23
 psycopg2-binary
 feedparser
-py-youtube
+
