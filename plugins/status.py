@@ -7,9 +7,9 @@ from pyrogram import StopPropagation, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
-from handlers.broadcast import broadcast
-from handlers.check_user import handle_user_status
-from handlers.database import Database
+
+from plugins.check_user import handle_user_status
+from plugins.database import Database
 
 LOG_CHANNEL = config.LOG_CHANNEL
 AUTH_USERS = config.AUTH_USERS
