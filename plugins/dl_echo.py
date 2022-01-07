@@ -17,6 +17,9 @@ from support.buttons import reply_markup_close, get_chat_invite_link, get_public
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, InputMediaPhoto
 
 
+from pyrogram.types import Message
+
+
 if bool(os.environ.get("ENV", False)):
     from sample_config import Config
 else:
