@@ -5,10 +5,7 @@ from pyrogram.types import *
 
 from config import Config
 
-if bool(os.environ.get("ENV", False)):
-    from sample_config import Config
-else:
-    from config import Config")
+
 
 
     
