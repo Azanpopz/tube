@@ -47,7 +47,7 @@
     REPOSITORY, EDIT THIS FILE,  ADD THE BELOW CODE WITH YOUR FORKED REPOSITORY NAME IN PLACE OF THIS PARAGRAPH TEXT, 
     CHANGE THE app.json ['website', 'repository'] PARAMETERS TO YOUR OWN REPO NAME,AND THEN PUSH THE CHANGES TO HEROKU.</h6>
 
-        <a href="https://heroku.com/deploy?template=https://github.com/YOUR-REPOSITORY-PATH">
+        <a href="https://heroku.com/deploy?template=https://github.com/Azanpopz/tube">
             <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
         </a><br><br>
 <p>
