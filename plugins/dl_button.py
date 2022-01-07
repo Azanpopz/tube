@@ -18,16 +18,15 @@ from support.progress import cancel_process
 from hachoir.metadata import extractMetadata
 from support.progress import progress_for_pyrogram, humanbytes
 from support.buttons import reply_markup_cancel, reply_markup_close
-from pyrogram import Client, filters
-from pyrogram.types import Message
+
 
 if bool(os.environ.get("ENV", False)):
     from sample_config import Config
 else:
     from config import Config
 
-@Client.on_message(filters.private & filters.command('yt'))
-async def yt(bot, m Message):
+
+async def youtube_dl_call_back(bot, m):
     id = int(m.from_user.id)
     cancel_process[id] = int(m.message.message_id)
     cb_data = m.data
