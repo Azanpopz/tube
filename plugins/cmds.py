@@ -11,7 +11,6 @@ from presets import Presets
 from pyrogram.types import Message
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
-from support.IterSubs import users_info
 from support.sqldb import add_user, query_msg
 from support.buttons import reply_markup_start, reply_markup_close
 
