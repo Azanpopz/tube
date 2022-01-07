@@ -6,7 +6,7 @@ import datetime
 import config
 import logging
 
-from handlers.database import Database
+from plugins.database import Database
 
 DB_URL = config.DB_URL
 DB_NAME = config.DB_NAME
