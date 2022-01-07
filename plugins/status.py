@@ -21,9 +21,9 @@ db = Database(DB_URL, DB_NAME)
 
 Bot = Client(
     "BroadcastBot",
-    bot_token=config.BOT_TOKEN,
-    api_id=config.API_ID,
-    api_hash=config.API_HASH,
+    tg_bot_token=config.TG_BOT_TOKEN,
+    app_id=config.APP_ID,
+    api_hash=config.APP_HASH,
 )
 
 @Client.on_message(filters.private)
