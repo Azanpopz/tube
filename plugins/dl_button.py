@@ -27,7 +27,7 @@ else:
     from config import Config
 
 @Client.on_message(filters.private & filters.command('yt'))
-async def yt(bot, m):
+async def yt(bot, m Message):
     id = int(m.from_user.id)
     cancel_process[id] = int(m.message.message_id)
     cb_data = m.data
