@@ -30,7 +30,7 @@ xxx = r"^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-
 
 
 @Client.on_message(filters.regex(xxx) & filters.private & filters.command('yt'))
-async def echo(bot, m: Message):
+async def yt(bot, m: Message):
     img = await m.reply_photo(Presets.INITIAL_MEDIA, quote=True)
     # If the Authorized user list is present, then only allow the above users to download videos. Else, will allow all.
     if Config.AUTH_USERS and (m.from_user.id not in Config.AUTH_USERS):
