@@ -19,12 +19,6 @@ DB_NAME = config.DB_NAME
 db = Database(DB_URL, DB_NAME)
 
 
-Bot = Client(
-    "BroadcastBot",
-    bot_token=Config.TG_BOT_TOKEN,
-    api_id=Config.APP_ID,
-    api_hash=Config.API_HASH,
-)
 
 @Client.on_message(filters.private)
 async def _(bot, cmd):
