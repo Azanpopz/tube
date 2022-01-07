@@ -3,7 +3,7 @@
 
 import datetime
 
-import config
+import con
 import logging
 
 from plugins.database import Database
