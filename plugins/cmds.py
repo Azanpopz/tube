@@ -59,16 +59,3 @@ async def send_messages(bot, m: Message):
                            )
 
 
-@Client.on_message(filters.private & filters.command('subs'))
-async def subscribers_count(bot, m: Message):
-    id = m.from_user.id
-    if id not in Config.SUDO_USERS:
-        return
-    msg = await m.reply_text(Presets.WAIT_MSG)
-    await m.delete()
-    messages = await users_info(bot)
-    active = messages[0]
-    blocked = messages[1]
-    total = active + blocked
-    await msg.edit(Presets.USERS_LIST.format(total, active, blocked),
-                   reply_markup=reply_markup_close)
