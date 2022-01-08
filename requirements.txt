@@ -55,3 +55,6 @@ psutil
 wget
 tswift
 regex
+
+
+yt_dlp
