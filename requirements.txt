@@ -58,3 +58,4 @@ regex
 
 
 yt_dlp
+py-youtube==1.1.2
